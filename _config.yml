@@ -54,7 +54,7 @@ texture:
     twitter: 
     github:  
    
-  style: yellow
+  style: red
   showNav: true
 
 show_excerpts: true
