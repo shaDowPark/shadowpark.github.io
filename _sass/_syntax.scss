@@ -1,0 +1,22 @@
+@import 'ext/dracula';
+
+.highlighter-rouge {
+	width: 100vw;
+	position: relative;
+	right: 150px;
+	margin: 40px 0;
+}
+
+.highlight {
+	background-color: #282a36;
+}
+
+div.highlight {
+	padding: 30px 7.5vw;
+}
+
+pre.highlight, code {
+	font-family: Hack, monospace; 
+	line-height: 1.4em;
+	tab-size: 4;
+}
