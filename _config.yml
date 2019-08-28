@@ -27,7 +27,7 @@ github_username:  shaDowPark
 permalink: /posts/:title/
 
 # Build settings
-markdown: kramdown
+# markdown: kramdown
 remote_theme: thelehhman/texture
 theme: texture
 plugins:
@@ -54,7 +54,7 @@ texture:
     twitter: 
     github:  
    
-  style: yellow
+  style: red
   showNav: true
 
 show_excerpts: true
