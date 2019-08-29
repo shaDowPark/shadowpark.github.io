@@ -10,6 +10,7 @@ $bigScreenW: 1600px;
 $leftWidth: 220px;
 
 $gray: #999;
+$lightGray: #eee;
 
 *,*:before,*:after {
 	box-sizing: border-box;
@@ -87,14 +88,18 @@ header {
 	}
 }
 
+.clearfix {
+	clear: both;
+}
+
 //
 // Basic Container Class
 //
 .container {
 	margin:0 150px;
-	max-width: 800px;
+	max-width: 720px;
 
-	.highlighter-rouge {
+	div.highlighter-rouge {
 		right: 150px;
 	}
 
@@ -104,29 +109,41 @@ header {
 
 	@media screen and  (max-width: $mobileWidth) {
 		margin:0 15px; 
-		.highlighter-rouge {
+		div.highlighter-rouge {
 			right: 15px;
+		}
+		div.highlight {
+			padding: 30px 15px;
 		}
 	}
 
 	@media screen and (max-width: $tabWidth) and (min-width: $mobileWidth){
 		margin:0 40px;	
-		.highlighter-rouge {
+		div.highlighter-rouge {
 			right: 40px;
+		}
+		div.highlight {
+			padding: 30px 40px;
 		}
 	}
 
 	@media screen and (max-width: $desktopWidth) and (min-width: $tabWidth){
 		margin:0 80px;
-		.highlighter-rouge {
+		div.highlighter-rouge {
 			right: 80px;
+		}
+		div.highlight {
+			padding: 30px 80px;
 		}
 	}
 
 	@media screen and (min-width: $desktopWidth) and (max-width: 1280px) {
 		margin:0 100px;
-		.highlighter-rouge {
+		div.highlighter-rouge {
 			right: 100px;
+		}
+		div.highlight {
+			padding: 30px 100px;
 		}
 	}
 }
@@ -156,14 +173,31 @@ header {
 	}
 }
 
-.posts {
+.post-tags {
 	list-style-type: none;
 	padding: 0;
 	li {
+		float: left;
+		padding: 10px 20px;
+		background-color: $lightGray;
+		color: #000;
+		margin: 5px;
+		border-radius: 2px;
+		@include fluidType(15px, 17px);
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.posts {
+	list-style-type: none;
+	padding: 0;
+	>li {
 		margin-bottom: 30px;
 		padding-bottom: 20px;
 		&:not(:last-child) {
-			border-bottom: 1px solid #eee;
+			border-bottom: 1px solid $lightGray;
 		}
 	}
 }
@@ -191,6 +225,9 @@ header {
 	position: absolute;
 	top: 0;
 	right: 5vw;
+	a {
+		color: inherit;
+	}
 	ul {
 		list-style-type: none;
 		li {
