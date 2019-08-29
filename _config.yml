@@ -37,7 +37,7 @@ texture:
 
 # Build settings
 markdown: kramdown
-theme: texture
+# theme: texture
 remote_theme: thelehhman/texture
 
 plugins:
