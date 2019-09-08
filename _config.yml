@@ -1,6 +1,6 @@
 title: shadow
 author: shaDowPark
-email: 
+email: 805580462@qq.com
 description: > # this means to ignore newlines until "show_exerpts:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -19,7 +19,7 @@ texture:
   tagline: Developer
   date_format: "%b %-d, %Y"
   style: black
-  showNav: true
+  showNav: false
   showPicker: false
 
   # generate social links in footer
