@@ -18,7 +18,7 @@ texture:
   title: shaDow
   tagline: Android Developer
   date_format: "%b %-d, %Y"
-  style: black
+  style: yellow
   showNav: false
   showPicker: false
 
